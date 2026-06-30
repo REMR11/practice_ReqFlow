@@ -168,6 +168,45 @@ Sin esas variables, la app funciona igual con respuestas de ejemplo (modo mock).
 
 ---
 
+## Ejecucion rapida
+
+### 1) Instalar dependencias
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2) Configurar variables de entorno (opcional para IA real)
+
+```bash
+cp .env.example .env
+```
+
+Luego edita `.env` y agrega tu `AI_PROXY_API_KEY`.
+
+### 3) Ejecutar la app Streamlit
+
+```bash
+streamlit run main.py
+```
+
+### 4) Ejecutar pruebas
+
+```bash
+pytest
+```
+
+### Modo mock vs modo IA real
+
+- **Modo mock (sin credenciales):** si `AI_PROXY_URL` y/o `AI_PROXY_API_KEY` no
+  estan definidas, la app sigue funcionando y cada skill devuelve una respuesta
+  de ejemplo (`is_mock=True`).
+- **Modo IA real (con credenciales):** si ambas variables estan configuradas,
+  `AIProxyClient` hace `POST {AI_PROXY_URL}/chat` y las skills usan el contenido
+  real devuelto por el proxy.
+
+---
+
 ## Cómo colaborar en GitHub
 
 Si es tu primera vez con Git:
