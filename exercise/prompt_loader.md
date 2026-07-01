@@ -4,13 +4,13 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Archivo a completar** | [`core/prompt_loader.py`](core/prompt_loader.py) |
+| **Archivo a crear** | [`core/prompt_loader.py`](core/prompt_loader.py) |
 | **Capa** | Infraestructura (`core/`) |
 | **Orden sugerido** | 2 — después de `models/schemas.py` |
 | **Archivos relacionados** | [`prompts/product_owner.md`](prompts/product_owner.md), [`prompts/qa.md`](prompts/qa.md), [`prompts/architecture.md`](prompts/architecture.md) |
 | **Documentación de referencia** | [`docs/07_interfaces.md`](docs/07_interfaces.md) |
 
-Los archivos `.py` **no fueron eliminados**. Abre `core/prompt_loader.py` en el editor, pega los comentarios de abajo encima de cada método/clase y completa el código con autocompletado.
+**Debes crear** el archivo `core/prompt_loader.py` en esa ruta. Usa los comentarios de abajo como guía y completa el código con autocompletado de VS Code.
 
 Esta guía está pensada para pegarse justo encima de los métodos principales, de forma que el editor pueda inferir mejor la intención. Esta clase es responsable de leer los archivos `.md` de la carpeta `prompts/`.
 

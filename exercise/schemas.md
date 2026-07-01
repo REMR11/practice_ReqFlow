@@ -4,12 +4,12 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Archivo a completar** | [`models/schemas.py`](models/schemas.py) |
+| **Archivo a crear** | [`models/schemas.py`](models/schemas.py) |
 | **Capa** | Datos (`models/`) |
 | **Orden sugerido** | 1 — empieza aquí (no depende de nada) |
 | **Documentación de referencia** | [`docs/04_models.md`](docs/04_models.md) |
 
-Los archivos `.py` **no fueron eliminados**. Abre `models/schemas.py` en el editor, pega los comentarios de abajo encima de cada clase y completa el código con autocompletado.
+**Debes crear** el archivo `models/schemas.py` en esa ruta. Usa los comentarios de abajo como guía y completa el código con autocompletado de VS Code.
 
 Esta guía está pensada para pegarse justo encima de las clases principales, de forma que el editor pueda inferir mejor la intención. Estas estructuras no tienen lógica: solo guardan datos que viajan por todo el sistema.
 

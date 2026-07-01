@@ -4,7 +4,7 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Archivo a completar** | [`core/pipeline.py`](core/pipeline.py) |
+| **Archivo a crear** | [`core/pipeline.py`](core/pipeline.py) |
 | **Capa** | Infraestructura / Orquestador (`core/`) |
 | **Orden sugerido** | 5 — después de las tres skills concretas |
 | **Depende de** | [`skills/product_owner_skill.py`](skills/product_owner_skill.py), [`skills/qa_skill.py`](skills/qa_skill.py), [`skills/architecture_skill.py`](skills/architecture_skill.py) |
@@ -12,7 +12,7 @@
 | **Usado por** | [`main.py`](main.py) |
 | **Documentación de referencia** | [`docs/05_pipeline.md`](docs/05_pipeline.md) |
 
-Los archivos `.py` **no fueron eliminados**. Abre `core/pipeline.py` en el editor, pega los comentarios de abajo encima de cada método y completa el código con autocompletado.
+**Debes crear** el archivo `core/pipeline.py` en esa ruta. Usa los comentarios de abajo como guía y completa el código con autocompletado de VS Code.
 
 Esta clase **orquesta** el flujo PO → QA → Arquitectura y acumula el `context` en cada paso.
 

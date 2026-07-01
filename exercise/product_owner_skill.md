@@ -4,7 +4,7 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Archivo a completar** | [`skills/product_owner_skill.py`](skills/product_owner_skill.py) |
+| **Archivo a crear** | [`skills/product_owner_skill.py`](skills/product_owner_skill.py) |
 | **Capa** | Skills (`skills/`) |
 | **Orden sugerido** | 3 — después de `skills/base_skill.py` (ya implementado; no modificar en este ejercicio) |
 | **Hereda de** | [`skills/base_skill.py`](skills/base_skill.py) |
@@ -12,7 +12,7 @@
 | **Skills similares (referencia)** | [`skills/qa_skill.py`](skills/qa_skill.py), [`skills/architecture_skill.py`](skills/architecture_skill.py) |
 | **Documentación de referencia** | [`docs/06_skills.md`](docs/06_skills.md) |
 
-Los archivos `.py` **no fueron eliminados**. Abre `skills/product_owner_skill.py` en el editor, pega los comentarios de abajo encima de cada método y completa el código con autocompletado.
+**Debes crear** el archivo `skills/product_owner_skill.py` en esa ruta. Usa los comentarios de abajo como guía y completa el código con autocompletado de VS Code.
 
 Esta skill es la **primera estación** del pipeline: genera la historia de usuario. No reimplementa `run()` — eso lo hace `BaseSkill`.
 

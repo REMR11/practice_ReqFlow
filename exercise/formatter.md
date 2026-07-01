@@ -4,14 +4,14 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Archivo a completar** | [`utils/formatter.py`](utils/formatter.py) |
+| **Archivo a crear** | [`utils/formatter.py`](utils/formatter.py) |
 | **Capa** | Presentación (`utils/`) |
 | **Orden sugerido** | 4 — después de `models/schemas.py` (puede hacerse en paralelo con el pipeline) |
 | **Depende de** | [`models/schemas.py`](models/schemas.py) (`SkillResult`, `PipelineResult`) |
 | **Usado por** | [`utils/ui.py`](utils/ui.py), [`main.py`](main.py) |
 | **Documentación de referencia** | [`docs/07_interfaces.md`](docs/07_interfaces.md) |
 
-Los archivos `.py` **no fueron eliminados**. Abre `utils/formatter.py` en el editor, pega los comentarios de abajo encima de cada método y completa el código con autocompletado.
+**Debes crear** el archivo `utils/formatter.py` en esa ruta. Usa los comentarios de abajo como guía y completa el código con autocompletado de VS Code.
 
 Esta guía está pensada para pegarse justo encima de los métodos principales, de forma que el editor pueda inferir mejor la intención. Esta clase convierte resultados del pipeline en texto Markdown para mostrar en Streamlit.
 
