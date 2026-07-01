@@ -17,6 +17,7 @@ class AIProxyClient:
     ) -> None:
         self.proxy_url = proxy_url or os.getenv("AI_PROXY_URL", "")
         self.proxy_api_key = proxy_api_key or os.getenv("AI_PROXY_API_KEY", "")
+        self.model = os.getenv("AI_PROXY_MODEL", "gpt-4o-mini")
         self.timeout = timeout
         self.is_available = bool(self.proxy_url and self.proxy_api_key)
 
@@ -26,9 +27,10 @@ class AIProxyClient:
         if not self.is_available:
             raise AIProxyError("AI proxy is not configured.")
 
-        url = f"{self.proxy_url.rstrip('/')}/chat"
+        url = f"{self.proxy_url.rstrip('/')}/chat/completions"
         headers = {"Authorization": f"Bearer {self.proxy_api_key}"}
         payload = {
+            "model": self.model,
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_message},

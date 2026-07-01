@@ -51,8 +51,9 @@ def test_complete_returns_extracted_content(monkeypatch: pytest.MonkeyPatch) -> 
     output = client.complete("prompt", "mensaje", max_tokens=250)
 
     assert output == "texto generado"
-    assert captured["url"] == "https://proxy.example/v1/chat"
+    assert captured["url"] == "https://proxy.example/v1/chat/completions"
     assert captured["headers"]["Authorization"] == "Bearer token"
+    assert captured["json"]["model"] == "gpt-4o-mini"
     assert captured["json"]["messages"][0]["role"] == "system"
     assert captured["json"]["messages"][1]["role"] == "user"
     assert captured["json"]["max_tokens"] == 250
